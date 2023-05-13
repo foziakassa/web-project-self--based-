@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' ,sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black
+    ;
+    color: white;
+}
+#header{
+    width: 100%;
+    height:100vh;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/2068.jpg);
+    background-size: cover;
+    background-position: center; 
+    padding-left: 50px;
+
+}
+.container{
+    padding: 10px 5%;
+} 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+.logo{
+    width:200px;
+    
+}
+nav ul li{
+    display:inline-block;
+    /* to arrenge lists horizontaly
+     */
+     list-style: none;
+     /* to remove the list dots */
+    margin:8px 18px;
+    /* right and left ,top and botton */
+}
+nav ul li a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform:uppercase;
+    position: relative;
+}
+
+
+nav ul li a:hover{
+    color: rgb(99, 7, 7);
+
+}
+.header-text{
+    
+    color:aliceblue;
+    margin-top: 27%;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px ;
+}
+.header-text h1 span{
+    color:aquamarine;
+
+}
+/* ..........about */
+#about{
+    padding: 80px 0;
+    color:white
+
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    /* width: 300px; */
+    width: 400px;
+
+    height: 500px;
+    /* i donn know why but it is important */
+    border-radius: 20px;
+}
+.about-col-2{
+    flex-basis: 60%;
+    margin-top: 50px;
+    /* to have 5% space between col-1 and col 2 35 ,60 */
+      
+}
+.about-col-2 p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 10px 5px;
+    text-transform: capitalize;
+}
+.subtitle{
+    text-transform: capitalize;
+    font-size: 60px;
+    color:azure;
+    font-weight: 20px;
+
+}
+.tab-titles{
+  display: flex;  
+  margin:20px 0 40px;
+
+}
+.tab-link{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500px;
+    text-transform: capitalize;
+    cursor:pointer;
+    position:relative;
+
+
+}
+.tab-link::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: rgb(80, 3, 3);
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.5s;
+}
+
+.tab-link.active-link::after{
+    width:50%;
+    
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px  0;
+  
+}
+.tab-contents ul li span{
+    color:rgb(153, 146, 146);
+    font-size: 15px;
+}
+ 
+
+.tab-contents{
+    display:none;
+
+}
+.tab-contents.active-tab{
+    display:block;
+
+} 
+/* .......................services */
+#services{
+    padding: 30px 0;
+    /* color:aliceblue; */
+    
+}
+.services-list{
+    display:grid;
+
+    
+    grid-template-columns: repeat(auto-fit,minmax(250px ,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+
+}
+.services-list div{
+    background: rgb(51, 49, 49);
+    padding : 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s ,  transform 0.5s; 
+}
+/* .services-list div i{
+    font-size:30px;
+    font-weight :500;
+    margin-bottom: 15px;
+
+} */
+.services-list div a{
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+    margin-top:20px;
+    display: inline-block;
+
+}
+.services-list div a:hover{
+    background:rgb(56, 7, 119);
+}
+.services-list div h2{
+    font-size :30px;
+    font-weight:500;
+    margin-bottom: 15px;
+}
+.services-list div:hover{
+    background: rgb(5, 5, 5) ;
+    transform:translateY(-10px);
+
+}
+.btn{
+    text-decoration: none;
+    background: rgb(170, 163, 163);
+    margin-top: 20px;
+    padding: 10px 7px;
+    color: white;
+    background-color: rgb(61, 102, 88);
+    border-radius: 3px;
+}
+.btn:hover{
+    color:rgb(155, 149, 149);
+    
+}
+/* .................contact  */
+
+.contact-left{
+    
+    /* color:aliceblue; */
+    flex-basis: 35%;
+    /* margin-left: 50px; */
+    
+}
+.contact-right{
+   
+    flex-basis: 60%;
+    /* margin-right: 50px; */
+}
+.contact-left p {
+    margin-top: 30px;  
+}
+.contact-left p i{ 
+    color:red;
+    margin-right: 15px;
+    font-size :25px;
+}
+.social-icons{ 
+     margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:rgb(233, 15, 15);
+    display:inline-block;
+    transition: transform 0s;
+}
+
+.social-icons a:hover{
+    color:rgb(239, 131, 131);
+    transform:translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    /* background: red; */
+}
+.contact-right form{
+    width: 100%;
+}
+form input , textarea{
+    width:100%;
+    border:0;
+    outline: none; 
+    background: rgb(84, 82, 82);
+    padding:10px;
+    margin:10px 0;
+    color:white;
+    font-size:18px;
+    border-radius: 6px;
+}
+/* form .btn2{
+    
+    padding:14px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor:pointer;
+} */
+
+.copyright {
+    width: 100%;
+    text-align: centeer;
+    padding: 25px 0;
+    /* background: gray; */
+    color:rgb(250, 117, 9);
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: center;
+    
+}
+/* .................for smoll screen  */
+nav .fas{
+    display:none;
+}
+
+ @media only screen and (max-width: 600px){
+ #header{
+    background-image: url("");
+ }
+
+ .header-text{
+    margin-top: 100% ;
+    font-size: 16px;
+ }
+ .header-text h1{
+   font-size: 30px; 
+ }
+ nav .fas{
+    display:block;
+    font-size: 25px;
+    
+}
+nav ul{
+    background: rgb(71, 60, 60);
+    position:fixed;
+    top :0;
+    right:-200px;
+    /* right: 0; */
+    width:200px;
+    height:100vh;
+    padding: top 50px;
+    z-index:2;
+    transition:right 0.5s;
+
+}
+nav ul li{
+    display:block;
+    margin:20px 10px;
+}
+nav ul .fas{
+    position:absolute;
+    top:5px;
+    left : 15px;
+    cursor:pointer;
+}
+.subtitle{
+    font-size: 40px;
+}
+ 
+ .about-col-1 ,.about-col-2{
+    flex-basis: 100%;
+ }
+ .about-col-1{
+    margin-bottom: 20px;
+ }
+ .about-col-2{
+    font-size: 14px;
+
+ }
+ .tab-link{
+   font-size: 16px;
+   margin-right: 20px;
+ }
+ .contact-left, .contact-right{
+    flex-basis: 100%;
+ }
+ .copyright{
+    font-size: 10px;
+ }
+ }
+ #msg {
+    color:rgb(175, 123, 10);
+    display:flex;
+    margin-top: 10px;
+
+ }
+
+
+
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>self-based </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awsom.come -->
+    <script src="https://kit.fontawesome.com/d2eb1822af.js" crossorigin="anonymous"></script>
+</head>
+<body color:black;>
+    <div id="header"> 
+        <div class = "container">
+            <nav>
+                <img src="logo.svg" class ="logo">
+                <ul id ="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <!-- <li><a href="#">portfolio</a></li> -->
+                    <li><a href="#contact">contact</a></li>
+                    <!-- cross icone  -->
+                    <i class ="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- menu icon  -->
+                <i class ="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <br><p>Software engineering student</p>
+                <h1><span>fozia</span> <br>from <abbr title="Adama Scince And Techology Universty">ASTU</abbr> </h1>
+            </div>
+        </div>  
+    </div>
+    <!-- ........................about -->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="emm.png" >
+        </div>
+        <div class="about-col-2">
+        <h1 class ="subtitle">about me</h1>
+        <p>Im Fozia kassa , third year Software engineering and graphics design student in Adama Scince and technology universty <a href ="https://goo.gl/maps/1jtSCPEuAMQ6mxkA9">located</a> ethiopia oromia region Adama city.I attend my high school mehonegna amba secondary school around dessie if you have any comment or work please  <a href="#contact">contact me</a></p>
+         
+    <div class="tab-titles">
+        <p class ="tab-link  active-link" onclick="opentab('skills')">Skills</p>
+        <p class ="tab-link " onclick="opentab('experience')">Experience</p>
+        <p class ="tab-link" onclick="opentab('education')">Education</p>
+        <p class ="tab-link" onclick="opentab('CV')">CV</p>
+        
+
+
+
+    </div>
+    <div class="tab-contents  active-tab" id ="skills">
+        <ul>
+            <li><span><a href="src code.rar">UI/UX</a></span><br> Designing web/app interface</li>
+            <li><span><a href="graphics/gallery.html">Graphics design</a></span><br>Logo ,bussinese Card ,Banner </li>
+            <li><span>Web Development</span><br>Using Java </li>
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="experience">
+        <ul>
+            <li><span>UI/UX</span><br> Designing web interface</li>
+            <li><span>Web Development</span><br>Web app development using java</li>
+            <li><span>Graphics Design</span><br>Logo ,bussinese Card ,Banner</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id ="education">
+        <ul>
+            <li><span>Under Graduated </span><br>In Software engineering</li>
+            <li><span>Graphics Design </span>Certeficate</li>
+
+        </ul>
+
+    </div>
+    <div class="tab-contents " id ="CV">
+        <ul>
+            <li><a href ="https://resume.io/r/hYdVItbkP">viwe cv</a></li>
+            
+        </ul>
+    </div>
+</div>
+    </div>
+ </div>
+ </div> 
+ <!-- ....................service -->
+ <div id="services">
+    <div class="container" >
+        <h1  class = "subtitle">Service</h1>
+        <div class="services-list">
+            <div >
+                <h2> web design</h2>
+                <p> we design fully attractive and fully responsive web using java for you</p>
+                <a  href="#">learn more</a>
+            </div>
+            <div >
+                <h2> UI/UX design</h2>
+                 <p>we are here to design attractive UI/UX for you using HTML , CSS and JAVASCRIT   </p>
+                <a  href="">learn more</a>
+            </div>
+            <div >
+                <h2>Grafics Design</h2>
+                <p> If you are Loking for grafics designer with zero year experiance i hear to you . im good in designing Logo ,banner,bussinese card and such things using Adobe Photoshope and Adobe ilustrator and i'm fast learner  </p>
+                <a  href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ....................contact ............. -->
+ <div id="contact" >
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">contact me</h1>
+                <p<i class ="fas fa-paper-plane"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=foziakassa19@gmail.com" target="_blank">foziakassa19@gmail.com</a></p>
+                <p><i class ="fas fa-phone-square-alt" ></i><a href="tel:+251927429720">+251927429720</a></p>
+                <div class="social-icons"> 
+                     <a href ="https://facebook.com/"><i class ="fa-brands fa-facebook"></i></a>
+                     <a href =""><i class ="fab fa-twitter-square"></i></a>
+                     <a href =""><i class ="fab fa-instagram"></i></a>
+                     <a href ="https://t.me/Fozykass"><i class ="fa-brands fa-telegram"></i></a>
+                </div>
+               <!-- <a href ="src code.rar" download  class ="btn  btn2">dowlode src code</a> -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type ="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="Email" placeholder="Youur Email" required>
+                    <textarea name ="Massage" rows ="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id ="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> copyright fozia . made with first web project</p>
+    </div>
+ </div>
+<script>
+    // ...............about...............................
+    var tablinks =document.getElementsByClassName("tab-link");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+     function opentab(tabname){ 
+         for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+ 
+     }
+</script>
+ 
+<script>
+    var sidemen =document.getElementById("sidemenu");
+    function openmenu(){
+      sidemen.style.right ="0";
+    }
+    function closemenu(){
+        sidemen.style.right="-200px";
+         
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRHyRi6qF2GQTEfG9KbjR1_q2tgBJ8kDU9qPthHPV4Z9bvOlwxKE4iNURSW84pjDa2/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="massage sent Successfully";
+            setTimeout(function(){
+               msg.innerHTML=""; 
+            },5000)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
+ 
