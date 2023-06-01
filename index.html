@@ -18,7 +18,6 @@
                     <li><a href="#header">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#services">services</a></li>
-                    <!-- <li><a href="#">portfolio</a></li> -->
                     <li><a href="#contact">contact</a></li>
                     <!-- cross icone  -->
                     <i class ="fas fa-times" onclick="closemenu()"></i>
@@ -27,8 +26,8 @@
                 <i class ="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <br><p>Software engineering student</p>
-                <h1><span>fozia</span> <br>from <abbr title="Adama Scince And Techology Universty">ASTU</abbr> </h1>
+                <br><h1>I'm <span>fozia</span> <br>from <abbr title="Adama Scince And Techology Universty">ASTU</abbr> </h1>
+                <p>Software engineering student</p>
             </div>
         </div>  
     </div>
@@ -36,42 +35,43 @@
     <div id="about">
     <div class="container">
         <div class="row">
-        <div class="about-col-1">
-            <img src="emm.png" >
-        </div>
-        <div class="about-col-2">
-        <h1 class ="subtitle">about me</h1>
-        <p>Im Fozia kassa , third year Software engineering and graphics design student in Adama Scince and technology universty <a href ="https://goo.gl/maps/1jtSCPEuAMQ6mxkA9">located</a> ethiopia oromia region Adama city.I attend my high school mehonegna amba secondary school around dessie if you have any comment or work please  <a href="#contact">contact me</a></p>
+             <div class="about-col-1">
+                <img src="emm.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class ="subtitle">about me</h1>
+                <p>Im Fozia kassa , third year Software engineering student and graphics designer in Adama Scince and technology universty <a href ="https://goo.gl/maps/1jtSCPEuAMQ6mxkA9">located</a> ethiopia, oromia region Adama city.I attend my high school mehonegna amba secondary school around dessie if you have any comment or work please  <a href="#contact">contact me</a></p>
          
     <div class="tab-titles">
         <p class ="tab-link  active-link" onclick="opentab('skills')">Skills</p>
-        <p class ="tab-link " onclick="opentab('experience')">Experience</p>
+        <p class ="tab-link " onclick="opentab('programing_language')">programing_language</p>
         <p class ="tab-link" onclick="opentab('education')">Education</p>
         <p class ="tab-link" onclick="opentab('CV')">CV</p>
-        
-
-
-
     </div>
     <div class="tab-contents  active-tab" id ="skills">
         <ul>
-            <li><span><a href="src code.rar">UI/UX</a></span><br> Designing web/app interface</li>
-            <li><span><a href="graphics/gallery.html">Graphics design</a></span><br>Logo ,bussinese Card ,Banner </li>
+            <li><span>UI/UX</span><a href="src code.rar">    visit</a><br> Designing web/app interface</li>
+            <li><span>Graphics design</span><a href="graphics/gallery.html">    visit</a><br>Logo ,bussinese Card ,Banner </li>
             <li><span>Web Development</span><br>Using Java </li>
         </ul>
     </div>
 
-    <div class="tab-contents" id="experience">
+    <div class="tab-contents" id="programing_language">
         <ul>
-            <li><span>UI/UX</span><br> Designing web interface</li>
-            <li><span>Web Development</span><br>Web app development using java</li>
-            <li><span>Graphics Design</span><br>Logo ,bussinese Card ,Banner</li>
+            <li><span>Java</span><br></li>
+            <li><span>Javascript</span><br></li>
+            <li><span>phyton</span><br></li>
+            <li><span>c++</span><br></li>
+            <li><span>Html</span><br></li>
+            <li><span>css</span><br></li>
+            <li><span>SQl</span><br></li>
+
         </ul>
     </div>
     <div class="tab-contents" id ="education">
         <ul>
             <li><span>Under Graduated </span><br>In Software engineering</li>
-            <li><span>Graphics Design </span>Certeficate</li>
+            <li><span>Graphics Design </span><br>Certeficate</li>
 
         </ul>
 
@@ -102,8 +102,8 @@
                 <a  href="">learn more</a>
             </div>
             <div >
-                <h2>Grafics Design</h2>
-                <p> If you are Loking for grafics designer with zero year experiance i hear to you . im good in designing Logo ,banner,bussinese card and such things using Adobe Photoshope and Adobe ilustrator and i'm fast learner  </p>
+                <h2>Graphics Design</h2>
+                <p> If you are Loking for graphics designer with zero year experiance i hear to you . im good in designing Logo ,banner,bussinese card and such things using Adobe Photoshope and Adobe ilustrator and i'm fast learner  </p>
                 <a  href="#">learn more</a>
             </div>
         </div>
@@ -123,11 +123,10 @@
                      <a href =""><i class ="fab fa-instagram"></i></a>
                      <a href ="https://t.me/Fozykass"><i class ="fa-brands fa-telegram"></i></a>
                 </div>
-               <!-- <a href ="src code.rar" download  class ="btn  btn2">dowlode src code</a> -->
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type ="text" name="Name" placeholder="Your Name" required >
+                    <input type ="text" name="Name" placeholder="Your Name" required class ="name" >
                     <input type="email" name="Email" placeholder="Youur Email" required>
                     <textarea name ="Massage" rows ="6" placeholder="Your Massage"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
@@ -140,52 +139,10 @@
         <p> copyright fozia . made with first web project</p>
     </div>
  </div>
-<script>
-    // ...............about...............................
-    var tablinks =document.getElementsByClassName("tab-link");
-    var tabcontents =document.getElementsByClassName("tab-contents");
-     function opentab(tabname){ 
-         for(tablink of tablinks){
-             tablink.classList.remove("active-link");
-         }
-         for(tabcontent of tabcontents){
-             tabcontent.classList.remove("active-tab");
-         }
-         event.currentTarget.classList.add("active-link");
-         document.getElementById(tabname).classList.add("active-tab");
- 
-     }
-</script>
- 
-<script>
-    var sidemen =document.getElementById("sidemenu");
-    function openmenu(){
-      sidemen.style.right ="0";
-    }
-    function closemenu(){
-        sidemen.style.right="-200px";
-         
-    }
 
-</script>
+   
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRHyRi6qF2GQTEfG9KbjR1_q2tgBJ8kDU9qPthHPV4Z9bvOlwxKE4iNURSW84pjDa2/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg =document.getElementById("msg");
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="massage sent Successfully";
-            setTimeout(function(){
-               msg.innerHTML=""; 
-            },5000)
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+<script src="index.js"></script>
 </body>
 
 </html>
